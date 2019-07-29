@@ -1,5 +1,7 @@
 # AngularRolebase
-
+This Project Contains below Examples :
+     1) 404 Not Found Pages....(When Route not found)
+     2) Permission Denied page --- Role Based Page Acees..
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
 ## Development server
