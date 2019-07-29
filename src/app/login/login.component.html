@@ -6,13 +6,18 @@
                     <h5 class="card-title text-center">
                         <img src="../../assets/images/logo.png" />
                     </h5>
-
                     <form class="form-signin" [formGroup]="loginForm" (ngSubmit)="login()">
-                        <div class="form-label-group">
-                            <input type="text" id="userType" class="form-control" placeholder="User Type"
-                                name="userType" formControlName="userType" required autofocus>
+                        <div class="form-group">
+                            <label *ngIf="userTypeLabel" for="userType">Please Enter User Type:</label>
+                            <input id="userType" (focus)="userTypeLabel = true" (focusout)="userTypeLabel = false" type="userType" class="form-control" id="userType"
+                             name="userType" formControlName="userType" required  placeholder="User Type">
+                            <div *ngIf="f.userType.dirty && f.userType.invalid" class="alert alert-danger form-group">
+                                <div *ngIf="f.userType.errors.required">userType is required</div>
+                                <div *ngIf="f.userType.errors.userType">userType must be a valid userType address</div>
+                            </div>
                         </div>
-                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
+
+                        <button [disabled]="!loginForm.valid" class="btn btn-lg btn-custom btn-primary btn-block text-uppercase" type="submit">Login</button>
                     </form>
                 </div>
             </div>

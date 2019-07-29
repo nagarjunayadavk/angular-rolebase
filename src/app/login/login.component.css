@@ -119,3 +119,12 @@
       color: #777;
     }
   }
+  .btn-custom{
+    background-color: #009688;
+    border-color: #009688;
+  }
+  .btn-custom:not(:disabled):not(.disabled).active, .btn-custom:not(:disabled):not(.disabled):active, .show>.btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #009688;
+    border-color: #009688;
+}

@@ -1,7 +1,17 @@
-# AngularRolebase
+# About AngularRolebase - #
+
 This Project Contains below Examples :
-     1) 404 Not Found Pages....(When Route not found)
-     2) Permission Denied page --- Role Based Page Acees..
+
+* 404 Not Found Pages....(When Route not found)
+* Role Based Page Acees --- Permission Denied page.
+    * Login as `admin` or `user`
+    * For  `admin` have below pages access.
+        * Admin Dashboard , Page1, Page2.
+    * For  `user` have below pages access.
+        * User Dashboard , Page1.
+
+# AngularRolebase
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
 ## Development server

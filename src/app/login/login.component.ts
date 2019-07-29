@@ -19,7 +19,9 @@ export class LoginComponent implements OnInit, OnDestroy {
      });
   }
 
-    
+   // convenience getter for easy access to form fields
+   get f() { return this.loginForm.controls; }
+   
   login(){
    this.userType = this.loginForm.value["userType"];
    this.authService.setLoginDetails({'role' : this.userType});
